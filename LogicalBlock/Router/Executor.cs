@@ -64,9 +64,12 @@ namespace LogicalBlock.Router
             string uniqueKey = Guid.NewGuid().ToString();
             string Response = "";
             string reqKomunalka1 = $@"https://w.amra-bank.com/ServicesKomunalka1/hs/lk/pay?account={account}&amount={value}&type=%D0%9E%D0%BF%D0%BB%D0%B0%D1%82%D0%B0%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD";
-            string reqKomunalka3 = $@"https://w.amra-bank.com/ServicesKomunalka3/hs/lk/pay?account={account}&amount={value}&type=%D0%9E%D0%BF%D0%BB%D0%B0%D1%82%D0%B0%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD";
-            string reqKomunalka5 = $@"https://w.amra-bank.com/ServicesKomunalka5/hs/lk/pay?account={account}&amount={value}&type=%D0%9E%D0%BF%D0%BB%D0%B0%D1%82%D0%B0%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD";
             string reqKomunalka2 = $@"https://w.amra-bank.com/ServicesKomunalka2/hs/lk/pay?account={account}&amount={value}&type=%D0%9E%D0%BF%D0%BB%D0%B0%D1%82%D0%B0%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD";
+            string reqKomunalka3 = $@"https://w.amra-bank.com/ServicesKomunalka3/hs/lk/pay?account={account}&amount={value}&type=%D0%9E%D0%BF%D0%BB%D0%B0%D1%82%D0%B0%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD";
+            string reqKomunalka4 = $@"https://w.amra-bank.com/ServicesKomunalka4/hs/lk/pay?account={account}&amount={value}&type=%D0%9E%D0%BF%D0%BB%D0%B0%D1%82%D0%B0%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD";
+            string reqKomunalka5 = $@"https://w.amra-bank.com/ServicesKomunalka5/hs/lk/pay?account={account}&amount={value}&type=%D0%9E%D0%BF%D0%BB%D0%B0%D1%82%D0%B0%D0%9E%D0%BD%D0%BB%D0%B0%D0%B9%D0%BD";
+            
+            
 
             switch (account.Substring(0,4))
             {
@@ -88,6 +91,11 @@ namespace LogicalBlock.Router
                 case "2419":// 2 ДУ
                     {
                         Response = sendRequest(reqKomunalka2);
+                        break;
+                    }
+                case "1219":
+                    {
+                        Response = sendRequest(reqKomunalka4);
                         break;
                     }
                 default: throw new Exception("Лицевой счет не корректный");
@@ -112,9 +120,12 @@ namespace LogicalBlock.Router
         {
             string Response = "";
             string reqKomunalka1 = $@"https://w.amra-bank.com/ServicesKomunalka1/hs/lk/term?account={account}";
-            string reqKomunalka3 = $@"https://w.amra-bank.com/ServicesKomunalka3/hs/lk/term?account={account}";
-            string reqKomunalka5 = $@"https://w.amra-bank.com/ServicesKomunalka5/hs/lk/term?account={account}";
             string reqKomunalka2 = $@"https://w.amra-bank.com/ServicesKomunalka2/hs/lk/term?account={account}";
+            string reqKomunalka3 = $@"https://w.amra-bank.com/ServicesKomunalka3/hs/lk/term?account={account}";
+            string reqKomunalka4 = $@"https://w.amra-bank.com/ServicesKomunalka4/hs/lk/term?account={account}";
+            string reqKomunalka5 = $@"https://w.amra-bank.com/ServicesKomunalka5/hs/lk/term?account={account}";
+            
+            
 
             switch (account.Substring(0, 4))
             {
@@ -138,7 +149,11 @@ namespace LogicalBlock.Router
                         Response = sendRequest(reqKomunalka2);
                         break;
                     }
-
+                case "1219":
+                    {
+                        Response = sendRequest(reqKomunalka4);
+                        break;
+                    }
                 default: throw new Exception("Лицевой счет не корректный");
             }
 
