@@ -39,8 +39,8 @@ namespace InterFaceEkassir_sett
             this.parametrGateway = "LOGIN,PASS,FULL_LOGGER";
 
 
-            this.argsCheckStage = "DebtElev,DebtApart,Master,Address,ControlHouse,AccRKC,DatePay";
-            this.argsProcessStage = "DebtElev,DebtApart,Master,Address,ControlHouse,AccRKC,DatePay";
+            this.argsCheckStage = "DebtElev,DebtApart,Master,Address,ControlHouse,AccRKC,LcHous,DatePay";
+            this.argsProcessStage = "DebtElev,DebtApart,Master,Address,ControlHouse,AccRKC,LcHous,DatePay";
 
 
             //

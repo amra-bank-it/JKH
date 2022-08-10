@@ -73,16 +73,7 @@ namespace LogicalBlock.Router
 
             switch (account.Substring(0,4))
             {
-                case "1518":// 5 ДУ
-                    {
-                        Response = sendRequest(reqKomunalka5);
-                        break;
-                    }
-                case "2404":// 3 ДУ
-                    {
-                        Response = sendRequest(reqKomunalka3);
-                        break;
-                    }
+
                 case "2021":// 1 ДУ
                     {
                         Response = sendRequest(reqKomunalka1);
@@ -93,11 +84,22 @@ namespace LogicalBlock.Router
                         Response = sendRequest(reqKomunalka2);
                         break;
                     }
-                case "1219":
+                case "2404":// 3 ДУ
+                    {
+                        Response = sendRequest(reqKomunalka3);
+                        break;
+                    }
+                case "1219": //4 ДУ
                     {
                         Response = sendRequest(reqKomunalka4);
                         break;
                     }
+                case "1518":// 5 ДУ
+                    {
+                        Response = sendRequest(reqKomunalka5);
+                        break;
+                    }
+
                 default: throw new Exception("Лицевой счет не корректный");
 
             }
@@ -129,17 +131,8 @@ namespace LogicalBlock.Router
 
             switch (account.Substring(0, 4))
             {
-                case "1518":// 5 ДУ
-                    {
-                        Response = sendRequest(reqKomunalka5);
-                        break;
-                    }
-                case "2404":// 3 ДУ
-                    {
-                        Response = sendRequest(reqKomunalka3);
-                        break;
-                    }
-                case "2021":// 3 ДУ
+
+                case "2021":// 1 ДУ
                     {
                         Response = sendRequest(reqKomunalka1);
                         break;
@@ -149,11 +142,22 @@ namespace LogicalBlock.Router
                         Response = sendRequest(reqKomunalka2);
                         break;
                     }
-                case "1219":
+                case "2404":// 3 ДУ
+                    {
+                        Response = sendRequest(reqKomunalka3);
+                        break;
+                    }
+                case "1219": // 4 ДУ
                     {
                         Response = sendRequest(reqKomunalka4);
                         break;
                     }
+                case "1518":// 5 ДУ
+                    {
+                        Response = sendRequest(reqKomunalka5);
+                        break;
+                    }
+
                 default: throw new Exception("Лицевой счет не корректный");
             }
 

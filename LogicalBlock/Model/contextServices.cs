@@ -28,6 +28,7 @@ namespace LogicalBlock.Model
         public static string Address;
         public static string ControlHouse;
         public static string AccRKC;
+        public static string LcHous;
         public static string DatePay;
 
 
@@ -61,6 +62,7 @@ namespace LogicalBlock.Model
             Master = "";
             Address = "";
             ControlHouse = "";
+            LcHous = "";
             AccRKC = "";
             DatePay = "";
 

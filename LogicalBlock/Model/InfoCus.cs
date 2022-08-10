@@ -27,6 +27,9 @@ namespace LogicalBlock.Model
         [JsonProperty("AccRKC")]
         public string AccRKC { get; set; }
 
+        [JsonProperty("LcHous")]
+        public string LcHous { get; set; }
+
         [JsonProperty("DatePay")]
         public string DatePay { get; set; }
     }
