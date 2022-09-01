@@ -37,6 +37,8 @@ namespace LogicalBlock.Router
                         contextServices.ControlHouse = localInfoCus.ControlHouse;
                         contextServices.DebtApart = localInfoCus.DebtApart;
                         contextServices.DebtElev = localInfoCus.DebtElev;
+                        contextServices.INN = localInfoCus.INN;
+                        contextServices.KPP = localInfoCus.KPP;
 
                         break;
                     }

@@ -30,8 +30,8 @@ namespace LogicalBlock.Model
         public static string AccRKC;
         public static string LcHous;
         public static string DatePay;
-
-
+        public static string INN;
+        public static string KPP;
 
         //Параметры настройки шлюза
         //Дефолт

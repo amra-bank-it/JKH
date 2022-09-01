@@ -32,5 +32,11 @@ namespace LogicalBlock.Model
 
         [JsonProperty("DatePay")]
         public string DatePay { get; set; }
+
+        [JsonProperty("INN")]
+        public string INN { get; set; }
+
+        [JsonProperty("KPP")]
+        public string KPP { get; set; }
     }
 }

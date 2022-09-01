@@ -18,6 +18,4 @@ namespace LogicalBlock.Model
         [JsonProperty("Status")]
         public string Status { get; set; }
     }
-
-
 }
